@@ -16,7 +16,7 @@ export const switchNetwork = async (chainId: string): Promise<void> => {
 		(response.status === EAdenaResponseStatus.SUCCESS &&
 			response.type === SwitchNetworkResponseType.SWITCH_NETWORK_SUCCESS) ||
 		(response.status === EAdenaResponseStatus.FAILURE &&
-			response.type === SwitchNetworkResponseType.REDUNDANT_CHANGE_REQUESTED)
+			response.type === SwitchNetworkResponseType.REDUNDANT_CHANGE_REQUEST)
 	) {
 		return;
 	}

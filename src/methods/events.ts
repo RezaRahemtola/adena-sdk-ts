@@ -16,7 +16,7 @@ export const onAccountChange = async (func: OnAccountChangeFunc): Promise<void> 
 /**
  * Add a listener on network changes
  * @async
- * @param {OnAccountChangeFunc} func - Function to call on a new event
+ * @param {OnNetworkChangeFunc} func - Function to call on a new event
  * @returns Nothing, throws an error if it fails
  */
 export const onNetworkChange = async (func: OnNetworkChangeFunc): Promise<void> => {

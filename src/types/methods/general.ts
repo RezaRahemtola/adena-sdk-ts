@@ -11,6 +11,8 @@ export type AdenaAddEstablish = (name: string) => Promise<AddEstablishResponse>;
 
 enum GetAccountResponseType {
 	GET_ACCOUNT = "GET_ACCOUNT",
+	NO_ACCOUNT = "NO_ACCOUNT",
+	WALLET_LOCKED = "WALLET_LOCKED",
 }
 
 enum EAccountStatus {
